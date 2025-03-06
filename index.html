@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Alkitab Lucu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Video di kiri dan kanan -->
+  <div class="video-container">
+    <!-- Video Kiri -->
+    <video id="video-left" class="video" autoplay loop muted>
+      <source src="meme.mp4" type="video/mp4">
+      Video tidak didukung.
+    </video>
+
+    <!-- Video Kanan -->
+    <video id="video-right" class="video" autoplay loop muted>
+      <source src="meme.mp4" type="video/mp4">
+      Video tidak didukung.
+    </video>
+  </div>
+
+  <!-- Kontainer Quiz -->
+  <div class="quiz-container">
+    <h1>Quiz Alkitab</h1>
+    <div id="question-container">
+      <p id="question">Soal akan tampil di sini</p>
+      <div id="answers">
+        <button id="answer1" class="answer">Jawaban 1</button>
+        <button id="answer2" class="answer">Jawaban 2</button>
+        <button id="answer3" class="answer">Jawaban 3</button>
+        <button id="answer4" class="answer">Jawaban 4</button>
+      </div>
+    </div>
+    <div id="result"></div>
+    <div id="next-button-container">
+      <button id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
+    </div>
+    <div id="final-message">
+      <!-- Ayat Alkitab akan ditampilkan di sini setelah quiz selesai -->
+    </div>
+  </div>
+
+  <!-- Musik Latar -->
+  <audio id="background-music" autoplay loop>
+    <source src="sound.mp3" type="audio/mp3">
+    Musik tidak didukung.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
